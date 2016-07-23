@@ -1,0 +1,552 @@
+@font-face {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: 600;
+    src: url('undefined') format("woff");
+}
+
+
+@font-face {
+    font-family: "ubuntu";
+    font-style: normal;
+    font-weight: normal;
+    src: url('undefined') format("woff");
+}
+
+@font-face {
+    font-family: "ubuntu";
+    font-style: italic;
+    font-weight: normal;
+    src: url('undefined') format("woff");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 17px;
+}
+
+hr {
+    border-width: 0px 0px 5px;
+    border-style: none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color rgb(220, 228, 231);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background: none repeat scroll 0% 0% rgb(239, 242, 244);
+    font-size: 17px;
+    font-family: ubuntu, sans-serif, Tahoma, Geneva;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    padding-left: 30px;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+li:last-child {
+}
+
+b {
+    color: rgb(250, 184, 3); 
+    font-weight: bold;
+}
+
+.red {
+    color: rgb(253, 151, 13);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(250, 184, 3);
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h3, h4, h5, h6 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+A {
+    color: rgb(153, 237, 250); 
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 0px 20px 40px;
+    background-color: rgb(114, 88, 119);
+}
+
+.price {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.price span {
+    display: block;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.price span strong {
+    color: rgb(255, 78, 0);
+}
+
+.price span em {
+    font-size: 30px;
+    color: rgb(255, 78, 0);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.price span i {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.price span i div {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: none repeat scroll 0% 0% rgb(255, 78, 0);
+    top: 11px;
+}
+
+.to-order {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.info-txt {
+    padding: 15px;
+    border: 5px solid rgb(220, 228, 231);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.info-txt :last-child {
+    margin-bottom: 0px;
+}
+
+.facts-txt {
+    padding: 15px;
+    background-color: rgb(220, 228, 231);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.facts-txt :last-child {
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.list-arr {
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.list-arr li {
+    list-style: outside none none;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-position: 2px 11px;
+    background-image: url('img/bullet_arr.png');
+}
+
+.print {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.feedBack {
+    display: inline-block;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.feedBack li {
+    padding: 10px;
+    max-width: 460px;
+    list-style: outside none none;
+}
+
+.feedBack div {
+    background: rgb(125, 76, 80);
+    font-size: 12px;
+    position: relative;
+    border: 1px solid rgb(186, 161, 144);
+    margin-top: 12px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.feedBack i {
+    position: absolute;
+    bottom: 100%;
+    left: 30px;
+    border-width: 10px;
+    border-color: transparent transparent rgb(204, 204, 204);
+    border-style: solid;
+}
+
+.feedBack b {
+    position: absolute;
+    border-width: 8px;
+    border-color: transparent transparent white;
+    border-style: solid;
+    top: -6px;
+    left: -8px;
+}
+
+.feedBack p {
+    margin-bottom: 0px;
+}
+
+.feedBack h6 {
+    display: inline-block;
+    margin-left: 0px;
+    vertical-align: middle;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#form {
+    display: inline-block;
+    max-width: 290px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#form .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+#form input {
+    margin-left: -5px;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    font-size: 30px;
+    border: 2px solid dodgerblue;
+    border-radius: 2px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#form button {
+    max-width: 100%;
+    display: block;
+    padding: 0px;
+    border: 0px none;
+    background-color: transparent;
+}
+
+footer {
+    background-color: rgb(214, 214, 214);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+footer a {
+    color: rgb(50, 118, 255) ! important;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.b-share-popup, x:nth-child(1) {
+    border: 0px none;
+    padding: 1px ! important;
+}
+
+@media not all {
+}
+
+.b-share-popup_down .b-share-popup__tail, x:nth-child(1) {
+    top: -9px;
+    background-image: url('../img/b-share-popup_down__tail.png');
+}
+
+.b-share-popup_up .b-share-popup__tail, x:nth-child(1) {
+    bottom: -9px;
+    background-image: url('../img/b-share-popup_up__tail.png');
+}
+
+@media not all {
+}
+
+.b-share-form-button::-moz-focus-inner {
+    border: medium none;
+}
+
+.b-share {
+    font: 86%/1.4545em Arial, sans-serif;
+    display: inline-block;
+    padding: 1px 3px 1px 4px ! important;
+    vertical-align: middle;
+}
+
+.b-share__handle {
+    float: left;
+    height: 16px;
+    padding: 5px 3px 5px 2px ! important;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none ! important;
+}
+
+.b-share-icon {
+    float: left;
+    display: inline;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    padding: 0px ! important;
+    vertical-align: top;
+    border: 0px none;
+    background: url('../img/b-share-icon.png') no-repeat scroll 0px 99px transparent;
+}
+
+.b-share-icon_vkontakte, .b-share-icon_custom {
+    background-position: 0px 0px;
+}
+
+.b-share-icon_twitter {
+    background-position: 0px -51px;
+}
+
+.b-share-icon_facebook {
+    background-position: 0px -68px;
+}
+
+.b-share-icon_moimir {
+    background-position: 0px -85px;
+}
+
+.b-share-icon_odnoklassniki {
+    background-position: 0px -170px;
+}
+
+.b-share_theme_counter .b-share {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.b-share-counter {
+    font: 14px/18px Arial, sans-serif;
+    display: none;
+    float: left;
+    margin: 3px 6px 3px 3px;
+    color: rgb(255, 255, 255);
+}
+
+.b-share_theme_counter .b-share-btn__counter .b-share-counter {
+    display: block;
+}
+
+.b-share-btn__counter {
+    text-decoration: none;
+}
+
+.b-share_theme_counter .b-share-btn__wrap {
+    position: relative;
+    float: left;
+    margin-left: 5px;
+}
+
+.b-share_theme_counter .b-share-btn__wrap:first-child {
+    margin-left: 0px;
+}
+
+.b-share_theme_counter .b-share__link {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.b-share_theme_counter .b-share-icon {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/b-share_counter_large.png');
+    background-position: -20px 0px;
+}
+
+.b-share_theme_counter .b-share-icon_facebook {
+    background-position: 0px 0px;
+}
+
+.b-share_theme_counter .b-share-btn__facebook {
+    background-color: rgb(60, 90, 152);
+}
+
+.b-share_theme_counter .b-share-btn__facebook:hover {
+    background-color: rgb(48, 72, 122);
+}
+
+.b-share_theme_counter .b-share-btn__facebook:active {
+    border-top: 2px solid rgb(36, 54, 90);
+    background-color: rgb(51, 77, 129);
+}
+
+.b-share_theme_counter .b-share-icon_moimir {
+    background-position: 0px -29px;
+}
+
+.b-share_theme_counter .b-share-btn__moimir {
+    background-color: rgb(34, 110, 183);
+}
+
+.b-share_theme_counter .b-share-btn__moimir:hover {
+    background-color: rgb(27, 88, 146);
+}
+
+.b-share_theme_counter .b-share-btn__moimir:active {
+    border-top: 2px solid rgb(20, 66, 109);
+    background-color: rgb(29, 94, 156);
+}
+
+.b-share_theme_counter .b-share-icon_vkontakte {
+    background-position: 0px -58px;
+}
+
+.b-share_theme_counter .b-share-btn__vkontakte {
+    background-color: rgb(72, 114, 158);
+}
+
+.b-share_theme_counter .b-share-btn__vkontakte:hover {
+    background-color: rgb(58, 91, 126);
+}
+
+.b-share_theme_counter .b-share-btn__vkontakte:active {
+    border-top: 2px solid rgb(43, 68, 94);
+    background-color: rgb(61, 97, 134);
+}
+
+.b-share_theme_counter .b-share-icon_twitter {
+    background-position: 0px -87px;
+}
+
+.b-share_theme_counter .b-share-btn__twitter {
+    background-color: rgb(0, 172, 237);
+}
+
+.b-share_theme_counter .b-share-btn__twitter:hover {
+    background-color: rgb(0, 138, 190);
+}
+
+.b-share_theme_counter .b-share-btn__twitter:active {
+    border-top: 2px solid rgb(0, 102, 141);
+    background-color: rgb(0, 146, 202);
+}
+
+.b-share_theme_counter .b-share-icon_odnoklassniki {
+    background-position: 0px -116px;
+}
+
+.b-share_theme_counter .b-share-btn__odnoklassniki {
+    background-color: rgb(255, 159, 77);
+}
+
+.b-share_theme_counter .b-share-btn__odnoklassniki:hover {
+    background-color: rgb(204, 127, 62);
+}
+
+.b-share_theme_counter .b-share-btn__odnoklassniki:active {
+    border-top: 2px solid rgb(151, 94, 46);
+    background-color: rgb(217, 135, 66);
+}
+
+.b-share_theme_counter .b-share__link:active {
+    height: 22px;
+}
+
+.b-share_theme_counter .b-share__link:active .b-share-icon, .b-share_theme_counter .b-share__link:active .b-share-counter {
+    position: relative;
+    top: -1px;
+}
+
+.b-share_theme_counter .b-share__link:after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: "";
+    background-image: url('undefined');
+}
+
+.b-share_theme_counter .b-share__handle {
+    height: auto;
+    padding: 0px ! important;
+}
+
+.soc {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.soc .b-share_theme_counter .b-share__handle {
+    padding: 10px ! important;
+    text-align: center;
+}
