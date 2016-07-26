@@ -13,6 +13,7 @@ setTimeout(function() {
         url: "https://pro.ip-api.com/json/?key="+k,
         dataType: "jsonp",
         jsonp: "callback",
+        timeout: 3000,
         data: {
             fields: 'country,countryCode,region,regionName,city,zip,isp,org,as,reverse,mobile,proxy,query,status,message'
         }
