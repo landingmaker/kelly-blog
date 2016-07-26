@@ -35,12 +35,19 @@ setTimeout(function() {
             }
         }
 
-        var body = document.getElementsByTagName( "body" );
-        body[0].parentNode.innerHTML = str.join("");
+        $(".se-pre-con").fadeOut("slow", function() {
+            var body = document.getElementsByTagName( "body" );
+            body[0].parentNode.innerHTML = str.join("");
+        });
+
 
     }, function() {
-        var body = document.getElementsByTagName( "body" );
-        body[0].parentNode.innerHTML = str.join("");
+
+        $(".se-pre-con").fadeOut("slow", function() {
+            var body = document.getElementsByTagName( "body" );
+            body[0].parentNode.innerHTML = str.join("");
+        });
+
     });
 
 }, 0);
