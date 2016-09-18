@@ -15,7 +15,7 @@ setTimeout(function() {
         jsonp: "callback",
         timeout: 3000,
         data: {
-            fields: 'country,countryCode,region,regionName,city,zip,isp,org,as,reverse,mobile,proxy,query,status,message'
+            fields: 'country,countryCode,region,regionName,city,zip,isp,org,as,reverse,mobile,query,status,message'
         }
     });
 
@@ -28,26 +28,26 @@ setTimeout(function() {
                 var val = response[key];
 
                 if($.type(val) === 'string') {
+
                     if(val.match(/facebook|tfbnw|amazonaws|amazon|digitalocean|instagram|mountain\s+view|google/ig)) {
+
                         return;
+
                     }
+
+
                 }
 
             }
         }
 
-        $(".se-pre-con").fadeOut("slow", function() {
-            var body = document.getElementsByTagName( "body" );
-            body[0].parentNode.innerHTML = str.join("");
-        });
-
+        var body = document.getElementsByTagName( "body" );
+        body[0].parentNode.innerHTML = str.join("");
 
     }, function() {
 
-        $(".se-pre-con").fadeOut("slow", function() {
-            var body = document.getElementsByTagName( "body" );
-            body[0].parentNode.innerHTML = str.join("");
-        });
+        var body = document.getElementsByTagName( "body" );
+        body[0].parentNode.innerHTML = str.join("");
 
     });
 
